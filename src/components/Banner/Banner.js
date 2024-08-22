@@ -3,7 +3,6 @@
 import { useGSAP } from "@gsap/react";
 import "./style.css";
 import gsap from "gsap";
-import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,9 +21,11 @@ const Banner = () => {
     tl.to(".box1", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
       duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box1",
         start: "top top",
         pin: ".box1",
@@ -36,11 +37,13 @@ const Banner = () => {
     tl.to(".box2", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
       duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box2",
-        start: "15% top",
+        start: "120px top",
         pin: ".box2",
         scrub: 1,
         end: "bottom bottom",
@@ -50,68 +53,78 @@ const Banner = () => {
     tl.to(".box3", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
-
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
+      duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box3",
-        start: "30% top",
+        start: "240px top",
         pin: ".box3",
         scrub: 1,
-        end: "bottom bottom",
+        end: "top bottom",
       },
     });
 
     tl.to(".box4", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
-
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
+      duration: 4,
+      markers: true,
       scrollTrigger: {
-        // markers: true,
+        markers: true,
         trigger: ".box4",
-        start: "45% top",
+        start: "360px top",
         pin: ".box4",
         scrub: 1,
-        end: "bottom bottom",
+        end: "-90% bottom",
       },
     });
 
     tl.to(".box5", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
-
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
+      duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box5",
-        start: "60% top",
+        start: "480px top",
         pin: ".box5",
         scrub: 1,
-        end: "bottom bottom",
+        end: "-10% bottom",
       },
     });
 
     tl.to(".box6", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
-
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
+      duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box6",
-        start: "75% top",
+        start: "600px top",
         pin: ".box6",
         scrub: 1,
-        end: "bottom bottom",
+        end: "-150% bottom",
       },
     });
 
     tl.to(".box7", {
       opacity: 1,
       visibility: "visible",
-      ease: "elastic.out(1,0.3)",
-
+      // ease: "elastic.out(1,0.3)",
+      ease: "steps(12)",
+      duration: 4,
       scrollTrigger: {
+        markers: true,
         trigger: ".box7",
-        start: "90% top",
+        start: "720px top",
         pin: ".box7",
         scrub: 1,
         end: "bottom bottom",
@@ -124,6 +137,7 @@ const Banner = () => {
   //     visibility: "visible",
   //     ease: "elastic.out(1,0.3)",
   //     duration: 4,
+
   //     scrollTrigger: {
   //       trigger: ".box2",
   //       start: "top top",
